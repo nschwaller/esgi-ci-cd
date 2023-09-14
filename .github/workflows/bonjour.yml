@@ -8,6 +8,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           sparse-checkout: .
-      - run: npm install -g cowsay
+      - run: npm install
+      - run: npm run lint
       - run: ls -l # Liste les fichier du répertoire courant
-      - run: cat README.md | cowsay # Affiche le contenu du fichier `README.md` à la base du dépôt
+      - run: cat README.md # Affiche le contenu du fichier `README.md` à la base du dépôt
