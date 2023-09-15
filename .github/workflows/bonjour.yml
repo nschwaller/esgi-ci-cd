@@ -7,6 +7,8 @@ jobs:
     container:
       image: ghcr.io/dduportal/esgi-gitpod
       options: --user=root
+    env:
+      IMAGE_NAME: "mynode:19"
     steps:
       - uses: actions/checkout@v4
         with:
